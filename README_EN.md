@@ -1,3 +1,7 @@
+# Own note //Oscar
+WHen generating the u2 files.
+Some files gets generated. It works to put the "nice_view-eyelash_sofle_left-zmk.uf2" file in the left half. I have not tested the other files
+
 - [Chinese](README.md)
 - [English](README_EN.md)
 
