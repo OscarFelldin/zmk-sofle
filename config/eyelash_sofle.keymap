@@ -48,14 +48,14 @@
     };
 
     macros {
-        vim_n_I: vim_n_I {
+        vim_n_si: vim_n_I {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp HOME &tog 8>;
             label = "VIM_N_I";
         };
 
-        vim_n_A: vim_n_A {
+        vim_n_sa: vim_n_A {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp END &tog 8>;
@@ -69,7 +69,7 @@
             label = "VIM_N_O";
         };
 
-        vim_n_O: vim_n_O {
+        vim_n_so: vim_n_O {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LEFT_ARROW) &kp ENTER &kp UP_ARROW &tog 8>;
