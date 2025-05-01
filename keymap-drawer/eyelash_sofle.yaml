@@ -349,7 +349,7 @@ layers:
   - Ctl+C
   - Ctl+Z
   - {t: vim_insert, h: toggle}
-  - '&vim_n_o'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+P
   - $$mdi:apple-keyboard-control$$
   - vim_normal_shift
@@ -414,7 +414,7 @@ layers:
   - COPY
   - UNDO
   - {t: vim_insert, h: toggle}
-  - '&vim_n_o'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PASTE
   - {t: \, s: '|'}
   - {t: '$$mdi:apple-keyboard-shift$$', type: held}
@@ -479,7 +479,7 @@ layers:
   - COPY
   - UNDO
   - {t: vim_insert, h: toggle}
-  - '&vim_n_o'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PASTE
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-shift$$
