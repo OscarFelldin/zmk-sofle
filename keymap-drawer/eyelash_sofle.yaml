@@ -282,8 +282,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
   - RGB BRI
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - EP TOG
   - $$mdi:apple-keyboard-control$$
@@ -340,22 +340,22 @@ layers:
   - {t: '0', s: )}
   - {t: '3', h: toggle}
   - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+$$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - R
   - T
   - $$mdi:arrow-down-bold$$
-  - COPY
-  - UNDO
+  - Ctl+C
+  - Ctl+Z
   - {t: vim_insert, h: toggle}
   - '&vim_n_o'
-  - PASTE
+  - Ctl+P
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
+  - vim_normal_shift
   - {t: vim_insert, h: toggle}
   - S
-  - D
+  - Ctl+X
   - F
   - G
   - $$mdi:arrow-left-bold$$
@@ -365,18 +365,18 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - vim_normal_ctrl
   - Z
-  - X
+  - {t: '$$mdi:backspace$$', type: backspace}
   - C
   - V
-  - B
+  - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - $$mdi:apple-finder$$
+  - Ctl+F
   - $$mdi:keyboard-esc$$
   - $$mdi:volume-off$$
   - '4'
@@ -417,7 +417,7 @@ layers:
   - '&vim_n_o'
   - PASTE
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
   - {t: vim_insert, h: toggle}
   - S
   - D
@@ -495,7 +495,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
   - Z
   - X
   - C
