@@ -61,20 +61,6 @@
             bindings = <&kp END &tog 8>;
             label = "VIM_N_A";
         };
-
-        vim_n_o: vim_n_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) &kp ENTER &tog 8>;
-            label = "VIM_N_O";
-        };
-
-        vim_n_so: vim_n_O {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_ARROW) &kp ENTER &kp UP_ARROW &tog 8>;
-            label = "VIM_N_O";
-        };
     };
 
     keymap {
@@ -144,7 +130,7 @@
             display-name = "vim_normal";
             bindings = <
 &kp ESC     &kp LCTRL  &kp LCTRL      &kp LCTRL      &kp LCTRL  &kp LCTRL       &kp UP_ARROW     &kp LCTRL  &kp LCTRL      &kp LCTRL     &kp LCTRL  &kp LCTRL  &tog 3
-&none       &none      &kp LC(RIGHT)  &kp LC(RIGHT)  &none      &none           &kp DOWN_ARROW   &kp LC(C)  &kp LC(Z)      &tog 8        &vim_n_o   &kp LC(P)  &kp LCTRL
+&none       &none      &kp LC(RIGHT)  &kp LC(RIGHT)  &none      &none           &kp DOWN_ARROW   &kp LC(C)  &kp LC(Z)      &tog 8        &none      &kp LC(P)  &kp LCTRL
 &mo 6       &tog 8     &kp S          &kp LC(X)      &kp LC(F)  &kp LCTRL       &kp LEFT_ARROW   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp LCTRL  &kp LCTRL
 &mo 7       &kp LCTRL  &kp BACKSPACE  &kp C          &kp V      &kp LC(LEFT)    &kp RIGHT_ARROW  &kp N      &kp LCTRL      &kp LCTRL     &kp LCTRL  &kp LC(F)  &kp ESC
 &kp C_MUTE  &mo 4      &kp LCTRL      &kp LCTRL      &kp LCTRL  &mo 1           &kp ENTER        &mo 2      &kp BACKSPACE  &kp ENTER     &tog 3     &kp LCTRL
@@ -157,7 +143,7 @@
             display-name = "vim_normal_shift";
             bindings = <
 &kp ESC           &kp N1  &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6      &kp N7         &kp N8        &kp N9     &kp N0         &tog 3
-&kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp K_COPY  &kp K_UNDO     &tog 8        &vim_n_o   &kp K_PASTE    &kp BSLH
+&kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp K_COPY  &kp K_UNDO     &tog 8        &none      &kp K_PASTE    &kp BSLH
 &kp LEFT_SHIFT    &tog 8  &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI       &kp APOS
 &kp LEFT_CONTROL  &kp Z   &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N       &kp M          &kp COMMA     &kp DOT    &kp K_FIND     &kp ESC
 &kp C_MUTE        &mo 4   &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1     &kp ENTER        &mo 2       &kp BACKSPACE  &kp ENTER     &tog 3     &kp RIGHT_ALT
@@ -170,7 +156,7 @@
             display-name = "vim_normal_ctrl";
             bindings = <
 &kp ESC           &kp N1  &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6      &kp N7         &kp N8        &kp N9     &kp N0         &tog 3
-&kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp K_COPY  &kp K_UNDO     &tog 8        &vim_n_o   &kp K_PASTE    &kp BSLH
+&kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp K_COPY  &kp K_UNDO     &tog 8        &none      &kp K_PASTE    &kp BSLH
 &kp LEFT_SHIFT    &tog 8  &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI       &kp APOS
 &kp LEFT_CONTROL  &kp Z   &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N       &kp M          &kp COMMA     &kp DOT    &kp K_FIND     &kp ESC
 &kp C_MUTE        &mo 4   &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1     &kp ENTER        &mo 2       &kp BACKSPACE  &kp ENTER     &tog 3     &kp RIGHT_ALT
