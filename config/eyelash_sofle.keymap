@@ -51,14 +51,14 @@
         vim_n_I: vim_n_I {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT) &tog 8>;
+            bindings = <&kp HOME &tog 8>;
             label = "VIM_N_I";
         };
 
         vim_n_A: vim_n_A {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) &tog 8>;
+            bindings = <&kp END &tog 8>;
             label = "VIM_N_A";
         };
 
@@ -130,11 +130,11 @@
 
         layer_4 {
             bindings = <
-&soft_off  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LCTRL  &kp LCTRL        &kp LCTRL        &kp LCTRL     &kp LCTRL     &kp LCTRL          &kp LCTRL
-&kp LCTRL  &kp LCTRL       &kp LCTRL     &kp LCTRL     &sys_reset    &kp LCTRL       &kp LCTRL  &rgb_ug RGB_BRI  &kp LCTRL        &kp LCTRL     &out OUT_TOG  &ext_power EP_TOG  &kp LCTRL
-&kp LCTRL  &kp LCTRL       &kp LCTRL     &kp LCTRL     &kp LCTRL     &kp LCTRL       &kp LCTRL  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bl BL_CYCLE  &bl BL_TOG    &kp LCTRL          &kp LCTRL
-&kp LCTRL  &studio_unlock  &kp LCTRL     &kp LCTRL     &kp LCTRL     &bootloader     &kp LCTRL  &rgb_ug RGB_BRD  &kp LCTRL        &kp LCTRL     &kp LCTRL     &kp LCTRL          &kp LCTRL
-&kp LCTRL  &kp LCTRL       &kp LCTRL     &kp LCTRL     &kp LCTRL     &kp LCTRL       &kp LCTRL  &kp LCTRL        &kp LCTRL        &kp LCTRL     &kp LCTRL     &kp LCTRL
+&soft_off  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LCTRL  &kp LCTRL        &kp LCTRL             &kp LCTRL             &kp LCTRL     &kp LCTRL          &kp LCTRL
+&kp LCTRL  &kp LCTRL       &kp LCTRL     &kp LCTRL     &sys_reset    &kp LCTRL       &kp LCTRL  &rgb_ug RGB_BRI  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG  &ext_power EP_TOG  &kp LCTRL
+&kp LCTRL  &kp LCTRL       &kp LCTRL     &kp LCTRL     &kp LCTRL     &kp LCTRL       &kp LCTRL  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG       &bl BL_CYCLE          &bl BL_TOG    &kp LCTRL          &kp LCTRL
+&kp LCTRL  &studio_unlock  &kp LCTRL     &kp LCTRL     &kp LCTRL     &bootloader     &kp LCTRL  &rgb_ug RGB_BRD  &kp LCTRL             &kp LCTRL             &kp LCTRL     &kp LCTRL          &kp LCTRL
+&kp LCTRL  &kp LCTRL       &kp LCTRL     &kp LCTRL     &kp LCTRL     &kp LCTRL       &kp LCTRL  &kp LCTRL        &kp LCTRL             &kp LCTRL             &kp LCTRL     &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -143,11 +143,11 @@
         vim_normal {
             display-name = "vim_normal";
             bindings = <
-&kp ESC           &kp N1  &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6      &kp N7         &kp N8        &kp N9     &kp N0         &tog 3
-&kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp K_COPY  &kp K_UNDO     &tog 8        &vim_n_o   &kp K_PASTE    &kp BSLH
-&kp LEFT_SHIFT    &tog 8  &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI       &kp APOS
-&kp LEFT_CONTROL  &kp Z   &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N       &kp M          &kp COMMA     &kp DOT    &kp K_FIND     &kp ESC
-&kp C_MUTE        &mo 4   &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1     &kp ENTER        &mo 2       &kp BACKSPACE  &kp ENTER     &tog 3     &kp RIGHT_ALT
+&kp ESC     &kp N1  &kp N2         &kp N3         &kp N4     &kp N5          &kp UP_ARROW     &kp N6     &kp N7         &kp N8        &kp N9     &kp N0         &tog 3
+&kp TAB     &none   &kp LC(RIGHT)  &kp LC(RIGHT)  &kp R      &kp T           &kp DOWN_ARROW   &kp LC(C)  &kp LC(Z)      &tog 8        &vim_n_o   &kp LC(P)      &kp BSLH
+&mo 6       &tog 8  &kp S          &kp LC(X)      &kp F      &kp G           &kp LEFT_ARROW   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI       &kp APOS
+&mo 7       &kp Z   &kp BACKSPACE  &kp C          &kp V      &kp LC(LEFT)    &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA     &kp DOT    &kp LC(F)      &kp ESC
+&kp C_MUTE  &mo 4   &kp LEFT_GUI   &kp LEFT_ALT   &kp SPACE  &mo 1           &kp ENTER        &mo 2      &kp BACKSPACE  &kp ENTER     &tog 3     &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
