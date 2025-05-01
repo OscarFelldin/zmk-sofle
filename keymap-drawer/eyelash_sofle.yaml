@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  Base:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -58,14 +58,14 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - layer1
+  - Arrows
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - mouse_cbr_+_
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: vim_normal, h: toggle}
+  - {t: vimn, h: toggle}
   - $$mdi:apple-keyboard-option$$
-  layer1:
+  Arrows:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -325,7 +325,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
-  vim_normal:
+  vimn:
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
@@ -338,7 +338,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
-  - {t: swe, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+$$mdi:arrow-right-bold$$
@@ -348,12 +348,12 @@ layers:
   - $$mdi:arrow-down-bold$$
   - Ctl+C
   - Ctl+Z
-  - {t: vim_insert, h: toggle}
+  - {t: vimi, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+P
   - $$mdi:apple-keyboard-control$$
-  - vim_normal_shift
-  - {t: vim_insert, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: vimi, h: toggle}
   - S
   - Ctl+X
   - Ctl+F
@@ -365,7 +365,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
-  - vim_normal_ctrl
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - C
@@ -383,145 +383,15 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
-  - layer1
+  - Arrows
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - mouse_cbr_+_
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: swe, h: toggle}
+  - {t: Base, h: toggle}
   - $$mdi:apple-keyboard-control$$
-  vim_normal_shift:
-  - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: swe, h: toggle}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - COPY
-  - UNDO
-  - {t: vim_insert, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PASTE
-  - {t: \, s: '|'}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
-  - {t: vim_insert, h: toggle}
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - $$mdi:apple-finder$$
-  - $$mdi:keyboard-esc$$
-  - $$mdi:volume-off$$
-  - kb-func
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - layer1
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - mouse_cbr_+_
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: swe, h: toggle}
-  - $$mdi:apple-keyboard-option$$
-  vim_normal_ctrl:
-  - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: swe, h: toggle}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - COPY
-  - UNDO
-  - {t: vim_insert, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PASTE
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: vim_insert, h: toggle}
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:apple-keyboard-control$$', type: held}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - $$mdi:apple-finder$$
-  - $$mdi:keyboard-esc$$
-  - $$mdi:volume-off$$
-  - kb-func
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - layer1
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - mouse_cbr_+_
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: swe, h: toggle}
-  - $$mdi:apple-keyboard-option$$
-  vim_insert:
-  - {t: vim_normal, h: toggle}
+  vimi:
+  - {t: vimn, h: toggle}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -572,16 +442,16 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: vim_normal, h: toggle}
+  - {t: vimn, h: toggle}
   - $$mdi:volume-off$$
   - kb-func
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - layer1
+  - Arrows
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - mouse_cbr_+_
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: vim_normal, h: toggle}
+  - {t: Base, h: toggle}
   - $$mdi:apple-keyboard-option$$
