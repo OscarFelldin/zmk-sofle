@@ -47,22 +47,6 @@
         tap-ms = <30>;
     };
 
-    macros {
-        vim_n_si: vim_n_I {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HOME &tog 0>;
-            label = "VIM_N_I";
-        };
-
-        vim_n_sa: vim_n_A {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp END &tog 0>;
-            label = "VIM_N_A";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -115,7 +99,7 @@
 &kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         kb-func {
@@ -124,7 +108,7 @@
 &none       &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &none            &none                 &none                 &none         &none              &none
 &none       &none           &none         &none         &sys_reset    &none           &mmv MOVE_DOWN   &rgb_ug RGB_BRI  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG  &ext_power EP_TOG  &none
 &none       &none           &none         &none         &none         &none           &mmv MOVE_LEFT   &rgb_ug RGB_EFF  &rgb_ug RGB_TOG       &bl BL_CYCLE          &bl BL_TOG    &none              &none
-&none       &studio_unlock  &none         &none         &none         &bootloader     &mmv MOVE_RIGHT  &rgb_ug RGB_BRD  &none                 &none                 &none         &none              &none
+&none       &studio_unlock  &none         &bt BT_CLR    &none         &bootloader     &mmv MOVE_RIGHT  &rgb_ug RGB_BRD  &none                 &none                 &none         &none              &none
 &kp C_MUTE  &trans          &none         &none         &none         &none           &mkp LCLK        &none            &none                 &none                 &none         &none
             >;
 
