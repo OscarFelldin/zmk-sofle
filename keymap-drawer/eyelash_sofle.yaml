@@ -132,18 +132,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Mouse:
   - '~'
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -156,7 +156,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
