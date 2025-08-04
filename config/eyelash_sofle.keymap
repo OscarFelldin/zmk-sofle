@@ -52,7 +52,7 @@
 
         base {
             bindings = <
-&kp ESC           &kp N1  &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6  &kp N7         &kp N8     &kp N9   &kp N0         &kp BACKSLASH
+&kp GRAVE         &kp N1  &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6  &kp N7         &kp N8     &kp N9   &kp N0         &kp BACKSLASH
 &kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp Y   &kp U          &kp I      &kp O    &kp P          &kp LEFT_BRACKET
 &kp LEFT_SHIFT    &kp A   &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp H   &kp J          &kp K      &kp L    &kp SEMI       &kp APOS
 &kp LEFT_CONTROL  &kp Z   &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
@@ -65,7 +65,7 @@
 
         arrows_fn_br_eq_- {
             bindings = <
-&kp GRAVE   &trans          &trans          &trans          &trans           &trans             &mmv MOVE_UP     &trans     &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans      &trans          &trans          &trans          &trans           &trans             &mmv MOVE_UP     &trans     &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans      &trans          &trans          &mmv MOVE_UP    &msc SCRL_UP     &trans             &mmv MOVE_DOWN   &kp PG_UP  &kp PAGE_DOWN  &kp HOME      &kp END           &trans             &kp RIGHT_BRACKET
 &trans      &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &mmv MOVE_LEFT   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT         &kp MINUS          &kp EQUAL
 &trans      &trans          &trans          &trans          &msc SCRL_DOWN   &trans             &mmv MOVE_RIGHT  &kp F12    &mkp LCLK      &mkp MCLK     &mkp RCLK         &trans             &trans
@@ -79,7 +79,7 @@
         Mouse {
             display-name = "Mouse";
             bindings = <
-&kp TILDE   &kp F1  &kp F2          &kp F3          &kp F4           &kp F5    &mmv MOVE_UP     &kp F6     &kp F7          &kp F8          &kp F9           &kp F10           &kp F11
+&trans      &kp F1  &kp F2          &kp F3          &kp F4           &kp F5    &mmv MOVE_UP     &kp F6     &kp F7          &kp F8          &kp F9           &kp F10           &kp F11
 &none       &none   &none           &msc SCRL_UP    &none            &none     &mmv MOVE_DOWN   &none      &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp LEFT_CONTROL  &kp F12
 &trans      &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none     &mmv MOVE_LEFT   &mkp MCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_CONTROL  &kp LEFT_CONTROL
 &trans      &none   &none           &none           &none            &none     &mmv MOVE_RIGHT  &none      &none           &none           &none            &none             &none
